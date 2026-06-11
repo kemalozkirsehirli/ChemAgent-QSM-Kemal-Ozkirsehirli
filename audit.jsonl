@@ -1,0 +1,17 @@
+{"event": "environment", "payload": {"gpu4pyscf": null, "numpy": "2.3.5", "platform": "Linux-4.4.0-x86_64-with-glibc2.41", "pyscf": null, "python": "3.13.5", "rdkit": "2025.9.4"}, "time_unix": 1781219677.0532966}
+{"event": "plan_received", "payload": {"backend": "mock", "id": "full-cv-objective-smoke"}, "time_unix": 1781219677.0534904}
+{"event": "validation_passed", "payload": {"errors": [], "valid": true, "warnings": []}, "time_unix": 1781219677.053781}
+{"event": "qm_task_start", "payload": {"task": "single_point"}, "time_unix": 1781219677.057284}
+{"event": "qm_task_done", "payload": {"task": "single_point"}, "time_unix": 1781219677.0576444}
+{"event": "qm_task_start", "payload": {"task": "optimize"}, "time_unix": 1781219677.0576894}
+{"event": "qm_task_done", "payload": {"task": "optimize"}, "time_unix": 1781219677.0578372}
+{"event": "qm_task_start", "payload": {"task": "descriptors"}, "time_unix": 1781219677.0578768}
+{"event": "qm_task_done", "payload": {"task": "descriptors"}, "time_unix": 1781219677.0580788}
+{"event": "qm_task_start", "payload": {"task": "frequencies"}, "time_unix": 1781219677.0581422}
+{"event": "qm_task_done", "payload": {"task": "frequencies"}, "time_unix": 1781219677.0584219}
+{"event": "qm_task_start", "payload": {"task": "ir_spectrum"}, "time_unix": 1781219677.0584824}
+{"event": "qm_task_done", "payload": {"task": "ir_spectrum"}, "time_unix": 1781219677.0618918}
+{"event": "statmech_load_trajectory", "payload": {"path": "examples/synthetic_glass.npz"}, "time_unix": 1781219677.0620432}
+{"event": "statmech_ml_features_written", "payload": {"feature_count": 69}, "time_unix": 1781219677.713267}
+{"event": "statmech_done", "payload": {"tasks": ["tcf", "msd", "sisf", "vacf", "rdf", "local_order", "mobility", "relaxation", "structure_dynamics_coupling", "non_gaussian", "mscope", "dynamical_heterogeneity"]}, "time_unix": 1781219677.71333}
+{"event": "workflow_complete", "payload": {"cv_objective_coverage": 1.0, "output_dir": "/mnt/data/chemagent-qsm-perfected-smoke"}, "time_unix": 1781219677.7285588}

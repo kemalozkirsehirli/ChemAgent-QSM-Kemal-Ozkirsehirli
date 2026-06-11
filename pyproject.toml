@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chemagent-qsm"
+version = "0.1.1"
+description = "LLM-guided, auditable quantum/statistical mechanics workflows for chemistry."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Kemal Ozkirsehirli"}]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "pydantic>=2",
+  "PyYAML>=6",
+  "typer>=0.9",
+  "networkx>=3",
+  "rich>=13",
+]
+
+[project.optional-dependencies]
+qm = ["pyscf>=2.6", "geometric>=1.0", "rdkit>=2023.9"]
+gpu = ["gpu4pyscf-cuda12x>=1.0", "cutensor-cu12"]
+llm = ["openai>=1.0", "langchain>=0.2", "langgraph>=0.1"]
+dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.10"]
+
+[project.scripts]
+chemagent-qsm = "chemagent_qsm.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]

@@ -1,0 +1,190 @@
+{
+  "artifact_count": 37,
+  "artifacts": [
+    {
+      "bytes": 1885,
+      "path": "audit.jsonl",
+      "sha256": "9798755b081926b34774b5136b42c159b5230b87a57afe61c0a24fd53ce28d7f"
+    },
+    {
+      "bytes": 2652,
+      "path": "cv_objective_coverage.json",
+      "sha256": "4a82c0cafa718158e9085be107bbddbe5f1168990336add0fcd6a57eb5a27ec7"
+    },
+    {
+      "bytes": 2413,
+      "path": "evaluation/benchmark_report.json",
+      "sha256": "7fce9d842d16f304698fe4131432a4de0e7fafebc116edc80601d48d9a11cdb9"
+    },
+    {
+      "bytes": 3356,
+      "path": "generated_workflow.py",
+      "sha256": "57ce902893a6aae8b74fbca9b999f05a6e43f0ceb4098513a2e342d8bc51a280"
+    },
+    {
+      "bytes": 2378,
+      "path": "plan.json",
+      "sha256": "2fc296e24296847dab147cc769d533f9033c0a94f5cf8e215474313f709e7570"
+    },
+    {
+      "bytes": 1906,
+      "path": "plan.yaml",
+      "sha256": "aeac647ab048c854247305f89eaf6590c73b1a3d7dab9c233c323d4a403f8dca"
+    },
+    {
+      "bytes": 973,
+      "path": "qm/descriptors.json",
+      "sha256": "db949dbc38caae41385a4281497aaa85e064525289decedd305ed2522dbb96d4"
+    },
+    {
+      "bytes": 214,
+      "path": "qm/frequencies.json",
+      "sha256": "a2c17a65343ea7d08a42800283e352456e924e6d50fc0df9db60deb4d3d6808e"
+    },
+    {
+      "bytes": 25154,
+      "path": "qm/ir_spectrum.csv",
+      "sha256": "6fb0fff860146e4ed2ade2f11576098cb9555e1f88badd258ac8dcca167c0f92"
+    },
+    {
+      "bytes": 30568,
+      "path": "qm/ir_spectrum.json",
+      "sha256": "8d9d88e2ffe2218709efc6f34a0e1886b431feff0d2e8a5a7f1f18bb5e67774f"
+    },
+    {
+      "bytes": 206,
+      "path": "qm/optimize.json",
+      "sha256": "7bd7002e5a9160d17fee6feb200cc1f20cb2b47a559ef6a51ee00ea62fb56659"
+    },
+    {
+      "bytes": 629,
+      "path": "qm/single_point.json",
+      "sha256": "45f33a4c9b205f1f3763201487751806446ff565d3e358adfa492b884de6484f"
+    },
+    {
+      "bytes": 1784,
+      "path": "report.md",
+      "sha256": "29a5cf25b80c0d1b2ac43c5ccf60e0b2abffa4ef772adb1a3f040d244565b389"
+    },
+    {
+      "bytes": 4042,
+      "path": "results.json",
+      "sha256": "c5fa5616461dd76555c81fd94b3c7e8d4832e5db433cef7196ac3df0451d1ad1"
+    },
+    {
+      "bytes": 268,
+      "path": "run.slurm",
+      "sha256": "c4b4999ae68ee3a8c53decd0247e51e2b2c7862f1c57b610b738f93d2cd7e2a7"
+    },
+    {
+      "bytes": 230,
+      "path": "statmech/dynamical_heterogeneity.json",
+      "sha256": "28d3d36dba1f296171a5620886dd02c558db3c3d4ac28fc76215a5cef9b1e759"
+    },
+    {
+      "bytes": 3634,
+      "path": "statmech/local_order.json",
+      "sha256": "17ff42a17a3a6adcc69748798a0a29538997bcf31c1acdb4bdc45680a06bd5c5"
+    },
+    {
+      "bytes": 2937,
+      "path": "statmech/ml_feature_row.json",
+      "sha256": "5f6eb149e1017e387ce069744a757c050a61e5d316b6bb16187f5706274d8bce"
+    },
+    {
+      "bytes": 2550,
+      "path": "statmech/ml_features.csv",
+      "sha256": "abae81c667cb044f4b6b1e65dad1113abfd46ba2ae597b28a70d5b1128943874"
+    },
+    {
+      "bytes": 6239,
+      "path": "statmech/mobility.json",
+      "sha256": "2e77a2dc8d28bbba9aa762b2453c6e0a2712a87a84eb1257b7af385ce9678de3"
+    },
+    {
+      "bytes": 694,
+      "path": "statmech/mscope.csv",
+      "sha256": "811c03fa5328e2845ff88ad89c929e9e4c65694edc427f6d98247f3e02f5a208"
+    },
+    {
+      "bytes": 1616,
+      "path": "statmech/mscope.json",
+      "sha256": "4cb6d84ade80925b8885243129a336d1fbef903acf0cb69878c4ec7c413729de"
+    },
+    {
+      "bytes": 691,
+      "path": "statmech/msd.csv",
+      "sha256": "2968454cde338e5f50a7946e7aa8b6f094cafc9283ab917fce479557895f2ac6"
+    },
+    {
+      "bytes": 993,
+      "path": "statmech/msd.json",
+      "sha256": "82ea02b9887bf23939aea860b0cee9e951014b77931361f71011767bf46dc510"
+    },
+    {
+      "bytes": 700,
+      "path": "statmech/non_gaussian.csv",
+      "sha256": "0b2d32c87cec67ef150915d91a2d1fb0d760ee1487d5dfdd97bd7fa64cad3a21"
+    },
+    {
+      "bytes": 1002,
+      "path": "statmech/non_gaussian.json",
+      "sha256": "8b89c569fbf93a077a62039c948b490937fdea50d798210f10c19787c73940ab"
+    },
+    {
+      "bytes": 2377,
+      "path": "statmech/rdf.csv",
+      "sha256": "11f3e3e75ec3443f36308fe2cb5399bbc54c854b663af3ffa57847f2ef52fe74"
+    },
+    {
+      "bytes": 3120,
+      "path": "statmech/rdf.json",
+      "sha256": "e456f47ca150e2f48e33e07d164b760c4bf6d1e41c84eee6caffde4e1cf99696"
+    },
+    {
+      "bytes": 64,
+      "path": "statmech/relaxation.json",
+      "sha256": "03e1b0d647fb06a470b66f505cf58e8834b5f081c4baf12efdaa766ff61f13cf"
+    },
+    {
+      "bytes": 1526,
+      "path": "statmech/sisf.json",
+      "sha256": "307a3e2d6d6367fbc9814240aeb7c02514a74914d547cf14182090dda1ed1de2"
+    },
+    {
+      "bytes": 74,
+      "path": "statmech/structure_dynamics_coupling.json",
+      "sha256": "8af282e11d3495c3c70d6da16bc0527ac5278557707b824bf6c9a376fd0c0e9d"
+    },
+    {
+      "bytes": 715,
+      "path": "statmech/tcf.csv",
+      "sha256": "65895e7fd2a184d536ac23059cbb1d74e0707071aa110ad19eebf2d75e59c50b"
+    },
+    {
+      "bytes": 1017,
+      "path": "statmech/tcf.json",
+      "sha256": "57a5a3bd15c296227bea39c86f3c2ef6fc33fad2358cde53d5343548bc9945c2"
+    },
+    {
+      "bytes": 735,
+      "path": "statmech/vacf.csv",
+      "sha256": "7dc7834f71603c5ddb79ca33ea496039b7b9058519203d7c02e89ff03e973807"
+    },
+    {
+      "bytes": 1037,
+      "path": "statmech/vacf.json",
+      "sha256": "c0dc23581ab3f90da299fe3176ce325760b18f0d1aad140b8026fd7a51fb0f25"
+    },
+    {
+      "bytes": 53,
+      "path": "validation.json",
+      "sha256": "c3bb38c193a4f3e21748d47b284c9a0569f9145da9f7529adff5fc534fa44e4f"
+    },
+    {
+      "bytes": 3964,
+      "path": "workflow_dag.json",
+      "sha256": "9ff6591614830bca2e48a8b699cab7bda473208657221fca6500f39802467784"
+    }
+  ]
+}

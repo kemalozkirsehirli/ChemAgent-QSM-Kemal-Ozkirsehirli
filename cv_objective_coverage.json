@@ -1,0 +1,119 @@
+{
+  "coverage_fraction": 1.0,
+  "objectives": {
+    "auditable_python_workflow_generation": {
+      "missing": [],
+      "passed": true,
+      "present": [
+        "generated_workflow.py",
+        "audit.jsonl",
+        "artifact_manifest.json"
+      ]
+    },
+    "benchmark_against_baselines": {
+      "missing": [],
+      "passed": true,
+      "present": [
+        "evaluation/benchmark_report.json"
+      ]
+    },
+    "electronic_structure_descriptors": {
+      "missing": [],
+      "passed": true,
+      "present": [
+        "qm/descriptors.json"
+      ]
+    },
+    "llm_trajectory_ml_features": {
+      "missing": [],
+      "passed": true,
+      "present": [
+        "statmech/ml_feature_row.json",
+        "statmech/ml_features.csv"
+      ]
+    },
+    "local_order_metric": {
+      "missing": [],
+      "passed": true,
+      "present": [
+        "statmech/local_order.json"
+      ]
+    },
+    "mobility_field": {
+      "missing": [],
+      "passed": true,
+      "present": [
+        "statmech/mobility.json"
+      ]
+    },
+    "msd_sisf_mscope_baselines": {
+      "missing": [],
+      "passed": true,
+      "present": [
+        "statmech/msd.json",
+        "statmech/sisf.json",
+        "statmech/mscope.json",
+        "statmech/dynamical_heterogeneity.json"
+      ]
+    },
+    "natural_language_to_validated_qm_pipeline": {
+      "missing": [],
+      "passed": true,
+      "present": [
+        "plan.json",
+        "validation.json",
+        "generated_workflow.py",
+        "workflow_dag.json"
+      ]
+    },
+    "optimized_geometries": {
+      "missing": [],
+      "passed": true,
+      "present": [
+        "qm/optimize.json"
+      ]
+    },
+    "pyscf_electronic_structure_for_drug_like_molecules": {
+      "missing": [],
+      "passed": true,
+      "present": [
+        "qm/single_point.json",
+        "qm/descriptors.json"
+      ]
+    },
+    "relaxation_timescale": {
+      "missing": [],
+      "passed": true,
+      "present": [
+        "statmech/relaxation.json"
+      ]
+    },
+    "structure_dynamics_coupling": {
+      "missing": [],
+      "passed": true,
+      "present": [
+        "statmech/structure_dynamics_coupling.json"
+      ]
+    },
+    "time_correlation_functions": {
+      "missing": [],
+      "passed": true,
+      "present": [
+        "statmech/tcf.json"
+      ]
+    },
+    "vibrational_frequencies_and_ir_spectrum": {
+      "missing": [],
+      "passed": true,
+      "present": [
+        "qm/frequencies.json",
+        "qm/ir_spectrum.json",
+        "qm/ir_spectrum.csv"
+      ]
+    }
+  },
+  "output_dir": "/mnt/data/chemagent-qsm-perfected-smoke",
+  "passed": true,
+  "present_artifacts": 26,
+  "required_artifacts": 26
+}

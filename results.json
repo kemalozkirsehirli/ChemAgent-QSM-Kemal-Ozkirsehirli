@@ -1,0 +1,190 @@
+{
+  "benchmark": {
+    "margin_over_best_baseline": 0.32,
+    "passed": true,
+    "score": 1.0
+  },
+  "cv_objective_coverage": {
+    "coverage_fraction": 1.0,
+    "passed": true
+  },
+  "id": "full-cv-objective-smoke",
+  "output_dir": "/mnt/data/chemagent-qsm-perfected-smoke",
+  "qm": {
+    "descriptors": {
+      "backend": "mock",
+      "dipole_debye": [
+        0.09,
+        0.0,
+        0.03
+      ],
+      "drug_discovery_bridge": {
+        "descriptor_family": "frontier-orbital conceptual DFT + partial charge screen",
+        "intended_use": "rank or triage drug-like molecules before higher-cost binding/free-energy workflows",
+        "limitations": "Koopmans-style descriptors are approximate and should be calibrated against assay or higher-level QM data."
+      },
+      "electronic_descriptors": {
+        "chemical_potential_ev": -6.48472071865754,
+        "electronegativity_ev": 6.48472071865754,
+        "electrophilicity_ev": 16.999046891888867,
+        "hardness_ev": 1.236881192999455,
+        "koopmans_ea_ev": 5.247839525658085,
+        "koopmans_ip_ev": 7.721601911656995,
+        "softness_ev-1": 0.40424254393220477
+      },
+      "gap_ev": 2.47376238599891,
+      "homo_ev": -7.721601911656995,
+      "lumo_ev": -5.247839525658085,
+      "mulliken_charges": [
+        0.05000000000000002,
+        -0.05,
+        -0.05
+      ],
+      "total_energy_hartree": -4.91404
+    },
+    "frequencies": {
+      "backend": "mock",
+      "frequencies_cm-1": [
+        572.0,
+        2022.0,
+        3472.0
+      ],
+      "has_imaginary_mode": false,
+      "ir_intensities": [
+        1.189226453100126,
+        0.4095485488003471,
+        1.0423605108773666
+      ]
+    },
+    "ir_spectrum": {
+      "num_points": 600
+    },
+    "optimize": {
+      "atom_block": "O 0.000000 0.000000 0.000000\nH 0.758602 0.000000 0.504284\nH -0.758602 0.000000 0.504284\n",
+      "backend": "mock",
+      "final_gradient_norm": 0.0001,
+      "num_steps": 3,
+      "optimized": true
+    },
+    "single_point": {
+      "backend": "mock",
+      "basis": "6-31g*",
+      "converged": true,
+      "method": "dft",
+      "mo_energy_hartree": [
+        -0.6474,
+        -0.556490909090909,
+        -0.4655818181818182,
+        -0.3746727272727273,
+        -0.2837636363636364,
+        -0.19285454545454545,
+        -0.1019454545454546,
+        -0.011036363636363669,
+        0.07987272727272728,
+        0.1707818181818182,
+        0.26169090909090914,
+        0.35259999999999997
+      ],
+      "mo_occ": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "num_atoms": 3,
+      "num_electrons_approx": 10,
+      "total_energy_hartree": -4.91404,
+      "xc": "b3lyp"
+    }
+  },
+  "statmech": {
+    "dynamical_heterogeneity": {
+      "keys": [
+        "heterogeneity_score",
+        "regime",
+        "chi4_peak",
+        "chi4_peak_lag",
+        "chi4_peak_cutoff",
+        "alpha2_peak",
+        "mobility_cv"
+      ]
+    },
+    "local_order": {
+      "keys": [
+        "l",
+        "cutoff",
+        "mean_per_frame",
+        "mean_per_atom",
+        "global_mean"
+      ]
+    },
+    "ml_feature_count": 69,
+    "mobility": {
+      "keys": [
+        "lag=1",
+        "lag=5",
+        "lag=10",
+        "lag=20"
+      ]
+    },
+    "mscope": {
+      "rows": 15
+    },
+    "msd": {
+      "keys": [
+        "lag",
+        "value"
+      ]
+    },
+    "non_gaussian": {
+      "keys": [
+        "lag",
+        "alpha2"
+      ]
+    },
+    "rdf": {
+      "keys": [
+        "r",
+        "g_r"
+      ]
+    },
+    "relaxation": {
+      "keys": [
+        "threshold",
+        "tau_ps"
+      ]
+    },
+    "sisf": {
+      "keys": [
+        "q=1",
+        "q=2.5"
+      ]
+    },
+    "structure_dynamics_coupling": {
+      "keys": [
+        "pearson_r",
+        "spearman_r"
+      ]
+    },
+    "tcf": {
+      "keys": [
+        "lag",
+        "value"
+      ]
+    },
+    "vacf": {
+      "keys": [
+        "lag",
+        "value"
+      ]
+    }
+  }
+}

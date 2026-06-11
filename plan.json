@@ -1,0 +1,100 @@
+{
+  "analysis": {
+    "local_order_cutoff": 3.5,
+    "local_order_l": 6,
+    "max_lag": 30,
+    "mobility_lags": [
+      1,
+      5,
+      10,
+      20
+    ],
+    "mscope_cutoffs": [
+      0.2,
+      0.3,
+      0.5
+    ],
+    "mscope_lags": [
+      1,
+      2,
+      5,
+      10,
+      20
+    ],
+    "overlap_cutoff": 0.3,
+    "q_values": [
+      1.0,
+      2.5
+    ],
+    "rdf_bins": 80,
+    "rdf_r_max": 8.0,
+    "relaxation_threshold": 0.3678794412
+  },
+  "backend": "mock",
+  "id": "full-cv-objective-smoke",
+  "metadata": {
+    "label": "synthetic_glass_demo",
+    "note": "End-to-end offline objective-coverage run. Switch backend to pyscf for production quantum chemistry."
+  },
+  "molecule": {
+    "atom_block": "O 0.000000 0.000000 0.000000\nH 0.758602 0.000000 0.504284\nH -0.758602 0.000000 0.504284\n",
+    "charge": 0,
+    "name": "water",
+    "smiles": null,
+    "spin": 0,
+    "unit": "Angstrom",
+    "xyz_path": null
+  },
+  "output_dir": "/mnt/data/chemagent-qsm-perfected-smoke",
+  "prompt": "Execute the complete ChemAgent-QSM objective suite: validated natural-language-like workflow, QM geometry optimization, electronic descriptors, frequencies, IR spectrum, TCFs, local order, relaxation, mobility field, structure/dynamics coupling, MSD, SISF, MSCOPE, and ML trajectory features for dynamical heterogeneity.\n",
+  "qm_settings": {
+    "basis": "6-31g*",
+    "conv_tol": 1e-09,
+    "density_fit": true,
+    "geomopt_backend": "geometric",
+    "geomopt_maxsteps": 100,
+    "ir_max_cm": 4000.0,
+    "ir_min_cm": 400.0,
+    "ir_points": 600,
+    "ir_width_cm": 20.0,
+    "max_scf_cycles": 100,
+    "memory_mb": 4000,
+    "method": "dft",
+    "newton": false,
+    "num_threads": null,
+    "pressure_pa": 101325.0,
+    "temperature_k": 298.15,
+    "use_gpu": false,
+    "xc": "b3lyp"
+  },
+  "qm_tasks": [
+    "single_point",
+    "optimize",
+    "descriptors",
+    "frequencies",
+    "ir_spectrum"
+  ],
+  "statmech_tasks": [
+    "tcf",
+    "msd",
+    "sisf",
+    "vacf",
+    "rdf",
+    "local_order",
+    "mobility",
+    "relaxation",
+    "structure_dynamics_coupling",
+    "non_gaussian",
+    "mscope",
+    "dynamical_heterogeneity"
+  ],
+  "tags": [],
+  "trajectory": {
+    "coordinate_unit": "Angstrom",
+    "coordinates_path": "examples/synthetic_glass.npz",
+    "selection": null,
+    "timestep_ps": 0.01,
+    "topology_path": null,
+    "unwrap": false
+  }
+}

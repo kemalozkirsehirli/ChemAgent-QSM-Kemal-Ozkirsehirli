@@ -1,0 +1,223 @@
+{
+  "edges": [
+    {
+      "source": "plan",
+      "target": "molecule"
+    },
+    {
+      "source": "plan",
+      "target": "trajectory"
+    },
+    {
+      "source": "molecule",
+      "target": "qm:single_point"
+    },
+    {
+      "source": "trajectory",
+      "target": "statmech:tcf"
+    },
+    {
+      "source": "trajectory",
+      "target": "statmech:msd"
+    },
+    {
+      "source": "trajectory",
+      "target": "statmech:sisf"
+    },
+    {
+      "source": "trajectory",
+      "target": "statmech:vacf"
+    },
+    {
+      "source": "trajectory",
+      "target": "statmech:rdf"
+    },
+    {
+      "source": "trajectory",
+      "target": "statmech:local_order"
+    },
+    {
+      "source": "trajectory",
+      "target": "statmech:mobility"
+    },
+    {
+      "source": "trajectory",
+      "target": "statmech:relaxation"
+    },
+    {
+      "source": "trajectory",
+      "target": "statmech:structure_dynamics_coupling"
+    },
+    {
+      "source": "trajectory",
+      "target": "statmech:non_gaussian"
+    },
+    {
+      "source": "trajectory",
+      "target": "statmech:mscope"
+    },
+    {
+      "source": "trajectory",
+      "target": "statmech:dynamical_heterogeneity"
+    },
+    {
+      "source": "qm:single_point",
+      "target": "qm:optimize"
+    },
+    {
+      "source": "qm:single_point",
+      "target": "report"
+    },
+    {
+      "source": "qm:optimize",
+      "target": "qm:descriptors"
+    },
+    {
+      "source": "qm:optimize",
+      "target": "report"
+    },
+    {
+      "source": "qm:descriptors",
+      "target": "qm:frequencies"
+    },
+    {
+      "source": "qm:descriptors",
+      "target": "report"
+    },
+    {
+      "source": "qm:frequencies",
+      "target": "qm:ir_spectrum"
+    },
+    {
+      "source": "qm:frequencies",
+      "target": "report"
+    },
+    {
+      "source": "qm:ir_spectrum",
+      "target": "report"
+    },
+    {
+      "source": "statmech:tcf",
+      "target": "report"
+    },
+    {
+      "source": "statmech:msd",
+      "target": "report"
+    },
+    {
+      "source": "statmech:sisf",
+      "target": "report"
+    },
+    {
+      "source": "statmech:vacf",
+      "target": "report"
+    },
+    {
+      "source": "statmech:rdf",
+      "target": "report"
+    },
+    {
+      "source": "statmech:local_order",
+      "target": "statmech:structure_dynamics_coupling"
+    },
+    {
+      "source": "statmech:local_order",
+      "target": "report"
+    },
+    {
+      "source": "statmech:mobility",
+      "target": "statmech:structure_dynamics_coupling"
+    },
+    {
+      "source": "statmech:mobility",
+      "target": "report"
+    },
+    {
+      "source": "statmech:relaxation",
+      "target": "report"
+    },
+    {
+      "source": "statmech:structure_dynamics_coupling",
+      "target": "report"
+    },
+    {
+      "source": "statmech:non_gaussian",
+      "target": "report"
+    },
+    {
+      "source": "statmech:mscope",
+      "target": "report"
+    },
+    {
+      "source": "statmech:dynamical_heterogeneity",
+      "target": "report"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "plan",
+      "kind": "input"
+    },
+    {
+      "id": "molecule"
+    },
+    {
+      "id": "trajectory"
+    },
+    {
+      "id": "qm:single_point"
+    },
+    {
+      "id": "qm:optimize"
+    },
+    {
+      "id": "qm:descriptors"
+    },
+    {
+      "id": "qm:frequencies"
+    },
+    {
+      "id": "qm:ir_spectrum"
+    },
+    {
+      "id": "statmech:tcf"
+    },
+    {
+      "id": "statmech:msd"
+    },
+    {
+      "id": "statmech:sisf"
+    },
+    {
+      "id": "statmech:vacf"
+    },
+    {
+      "id": "statmech:rdf"
+    },
+    {
+      "id": "statmech:local_order"
+    },
+    {
+      "id": "statmech:mobility"
+    },
+    {
+      "id": "statmech:relaxation"
+    },
+    {
+      "id": "statmech:structure_dynamics_coupling"
+    },
+    {
+      "id": "statmech:non_gaussian"
+    },
+    {
+      "id": "statmech:mscope"
+    },
+    {
+      "id": "statmech:dynamical_heterogeneity"
+    },
+    {
+      "id": "report",
+      "kind": "output"
+    }
+  ]
+}
