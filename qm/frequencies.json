@@ -1,0 +1,14 @@
+{
+  "backend": "mock",
+  "frequencies_cm-1": [
+    572.0,
+    2022.0,
+    3472.0
+  ],
+  "has_imaginary_mode": false,
+  "ir_intensities": [
+    1.189226453100126,
+    0.4095485488003471,
+    1.0423605108773666
+  ]
+}

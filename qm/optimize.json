@@ -1,0 +1,7 @@
+{
+  "atom_block": "O 0.000000 0.000000 0.000000\nH 0.758602 0.000000 0.504284\nH -0.758602 0.000000 0.504284\n",
+  "backend": "mock",
+  "final_gradient_norm": 0.0001,
+  "num_steps": 3,
+  "optimized": true
+}

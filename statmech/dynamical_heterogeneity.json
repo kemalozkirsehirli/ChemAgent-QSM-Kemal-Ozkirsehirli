@@ -1,0 +1,9 @@
+{
+  "alpha2_peak": 0.8570356720054209,
+  "chi4_peak": 0.5971914036817882,
+  "chi4_peak_cutoff": 0.2,
+  "chi4_peak_lag": 2,
+  "heterogeneity_score": 1.8849755377572033,
+  "mobility_cv": 0.43074846206999423,
+  "regime": "moderate"
+}

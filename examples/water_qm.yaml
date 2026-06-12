@@ -1,0 +1,41 @@
+id: water-qm-demo
+prompt: Optimize water with B3LYP/6-31g*, compute electronic descriptors, vibrational frequencies, and an IR spectrum.
+backend: mock
+molecule:
+  name: water
+  atom_block: |
+    O 0.000000 0.000000 0.000000
+    H 0.758602 0.000000 0.504284
+    H -0.758602 0.000000 0.504284
+  charge: 0
+  spin: 0
+  unit: Angstrom
+qm_settings:
+  method: dft
+  basis: 6-31g*
+  xc: b3lyp
+  density_fit: true
+  newton: false
+  use_gpu: false
+  max_scf_cycles: 100
+  conv_tol: 1.0e-9
+  memory_mb: 4000
+  geomopt_backend: geometric
+  geomopt_maxsteps: 100
+  temperature_k: 298.15
+  pressure_pa: 101325.0
+  ir_min_cm: 400
+  ir_max_cm: 4000
+  ir_points: 600
+  ir_width_cm: 20
+qm_tasks:
+  - single_point
+  - optimize
+  - descriptors
+  - frequencies
+  - ir_spectrum
+statmech_tasks: []
+analysis: {}
+output_dir: runs/water_qm
+metadata:
+  note: offline mock backend; switch backend to pyscf for production quantum chemistry.

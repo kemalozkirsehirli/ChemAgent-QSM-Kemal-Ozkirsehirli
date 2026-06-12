@@ -1,0 +1,70 @@
+id: full-cv-objective-smoke
+prompt: >
+  Execute the complete ChemAgent-QSM objective suite: validated natural-language-like workflow, QM geometry optimization, electronic descriptors, frequencies, IR spectrum, TCFs, local order, relaxation, mobility field, structure/dynamics coupling, MSD, SISF, MSCOPE, and ML trajectory features for dynamical heterogeneity.
+backend: mock
+molecule:
+  name: water
+  atom_block: |
+    O 0.000000 0.000000 0.000000
+    H 0.758602 0.000000 0.504284
+    H -0.758602 0.000000 0.504284
+  charge: 0
+  spin: 0
+  unit: Angstrom
+qm_settings:
+  method: dft
+  basis: 6-31g*
+  xc: b3lyp
+  density_fit: true
+  newton: false
+  use_gpu: false
+  max_scf_cycles: 100
+  conv_tol: 1.0e-9
+  memory_mb: 4000
+  geomopt_backend: geometric
+  geomopt_maxsteps: 100
+  temperature_k: 298.15
+  pressure_pa: 101325.0
+  ir_min_cm: 400
+  ir_max_cm: 4000
+  ir_points: 600
+  ir_width_cm: 20
+qm_tasks:
+  - single_point
+  - optimize
+  - descriptors
+  - frequencies
+  - ir_spectrum
+trajectory:
+  coordinates_path: examples/synthetic_glass.npz
+  timestep_ps: 0.01
+  coordinate_unit: Angstrom
+statmech_tasks:
+  - tcf
+  - msd
+  - sisf
+  - vacf
+  - rdf
+  - local_order
+  - mobility
+  - relaxation
+  - structure_dynamics_coupling
+  - non_gaussian
+  - mscope
+  - dynamical_heterogeneity
+analysis:
+  max_lag: 30
+  q_values: [1.0, 2.5]
+  rdf_r_max: 8.0
+  rdf_bins: 80
+  local_order_l: 6
+  local_order_cutoff: 3.5
+  mobility_lags: [1, 5, 10, 20]
+  relaxation_threshold: 0.3678794412
+  overlap_cutoff: 0.3
+  mscope_cutoffs: [0.2, 0.3, 0.5]
+  mscope_lags: [1, 2, 5, 10, 20]
+output_dir: runs/full_cv_objective_smoke
+metadata:
+  label: synthetic_glass_demo
+  note: End-to-end offline objective-coverage run. Switch backend to pyscf for production quantum chemistry.

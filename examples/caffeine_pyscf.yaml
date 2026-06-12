@@ -1,0 +1,41 @@
+id: caffeine-pyscf-template
+prompt: Optimize caffeine with B3LYP/6-31g*, compute electronic descriptors, vibrational frequencies, and IR spectrum.
+backend: pyscf
+molecule:
+  name: caffeine
+  smiles: Cn1cnc2n(C)c(=O)n(C)c(=O)c12
+  charge: 0
+  spin: 0
+  unit: Angstrom
+qm_settings:
+  method: dft
+  basis: 6-31g*
+  xc: b3lyp
+  density_fit: true
+  newton: false
+  use_gpu: false
+  max_scf_cycles: 100
+  conv_tol: 1.0e-9
+  memory_mb: 12000
+  num_threads: 8
+  geomopt_backend: geometric
+  geomopt_maxsteps: 150
+  temperature_k: 298.15
+  pressure_pa: 101325.0
+  ir_min_cm: 400
+  ir_max_cm: 4000
+  ir_points: 1800
+  ir_width_cm: 20
+qm_tasks:
+  - single_point
+  - optimize
+  - descriptors
+  - frequencies
+  - ir_spectrum
+statmech_tasks: []
+analysis: {}
+output_dir: runs/caffeine_pyscf
+metadata:
+  production_notes:
+    - Requires PySCF, geomeTRIC, and RDKit for SMILES-to-geometry generation.
+    - For GPU4PySCF, install gpu4pyscf and set use_gpu true.

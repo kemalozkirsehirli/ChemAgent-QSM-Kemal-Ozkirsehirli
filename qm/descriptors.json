@@ -1,0 +1,31 @@
+{
+  "backend": "mock",
+  "dipole_debye": [
+    0.09,
+    0.0,
+    0.03
+  ],
+  "drug_discovery_bridge": {
+    "descriptor_family": "frontier-orbital conceptual DFT + partial charge screen",
+    "intended_use": "rank or triage drug-like molecules before higher-cost binding/free-energy workflows",
+    "limitations": "Koopmans-style descriptors are approximate and should be calibrated against assay or higher-level QM data."
+  },
+  "electronic_descriptors": {
+    "chemical_potential_ev": -6.48472071865754,
+    "electronegativity_ev": 6.48472071865754,
+    "electrophilicity_ev": 16.999046891888867,
+    "hardness_ev": 1.236881192999455,
+    "koopmans_ea_ev": 5.247839525658085,
+    "koopmans_ip_ev": 7.721601911656995,
+    "softness_ev-1": 0.40424254393220477
+  },
+  "gap_ev": 2.47376238599891,
+  "homo_ev": -7.721601911656995,
+  "lumo_ev": -5.247839525658085,
+  "mulliken_charges": [
+    0.05000000000000002,
+    -0.05,
+    -0.05
+  ],
+  "total_energy_hartree": -4.91404
+}

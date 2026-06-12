@@ -1,0 +1,34 @@
+benchmark: chemagent-qsm-v0
+purpose: Evaluate NL-to-workflow translation, static validation, artifact production, and scientific sanity checks.
+tasks:
+  - id: water-dft-ir
+    prompt: Optimize water with B3LYP/6-31g*, compute HOMO-LUMO gap, Mulliken charges, vibrational frequencies, and IR spectrum.
+    required_qm_tasks: [single_point, optimize, descriptors, frequencies, ir_spectrum]
+    required_artifacts: [plan.json, validation.json, generated_workflow.py, qm/descriptors.json, qm/ir_spectrum.csv]
+  - id: caffeine-druglike-descriptors
+    prompt: For caffeine, generate a PySCF DFT workflow with descriptors useful for drug-discovery electronic-structure analysis.
+    required_qm_tasks: [single_point, descriptors]
+    required_artifacts: [plan.json, validation.json, generated_workflow.py, qm/descriptors.json]
+  - id: glass-dynamical-heterogeneity
+    prompt: Analyze a disordered glass-forming trajectory with MSD, SISF, local order, mobility, relaxation time, structure dynamics coupling, and MSCOPE features.
+    required_statmech_tasks: [msd, sisf, local_order, mobility, relaxation, structure_dynamics_coupling, mscope]
+    required_artifacts: [plan.json, validation.json, generated_workflow.py, statmech/msd.json, statmech/mscope.json]
+metrics:
+  planning:
+    - exact_required_task_recall
+    - invalid_task_rate
+    - human_review_notes_present
+  execution:
+    - validation_pass_rate
+    - artifact_completion_rate
+    - rerunnable_generated_workflow_rate
+  qm_sanity:
+    - scf_convergence_rate
+    - finite_total_energy_rate
+    - positive_frequency_fraction
+    - nonnegative_ir_intensity_rate
+  statmech_sanity:
+    - msd_lag0_zero
+    - sisf_lag0_one
+    - finite_local_order_rate
+    - finite_mscope_rate

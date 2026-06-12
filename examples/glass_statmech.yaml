@@ -1,0 +1,33 @@
+id: synthetic-glass-statmech-demo
+prompt: Analyze a disordered glass-forming trajectory with MSD, SISF, local order, mobility, relaxation, structure/dynamics coupling, non-Gaussian parameter, and MSCOPE features.
+backend: mock
+qm_tasks: []
+statmech_tasks:
+  - msd
+  - sisf
+  - vacf
+  - rdf
+  - local_order
+  - mobility
+  - relaxation
+  - structure_dynamics_coupling
+  - non_gaussian
+  - mscope
+  - dynamical_heterogeneity
+trajectory:
+  coordinates_path: examples/synthetic_glass.npz
+  timestep_ps: 0.01
+  coordinate_unit: Angstrom
+analysis:
+  max_lag: 30
+  q_values: [1.0, 2.5]
+  rdf_r_max: 8.0
+  rdf_bins: 80
+  local_order_l: 6
+  local_order_cutoff: 3.5
+  mobility_lags: [1, 5, 10, 20]
+  relaxation_threshold: 0.3678794412
+  overlap_cutoff: 0.3
+  mscope_cutoffs: [0.2, 0.3, 0.5]
+  mscope_lags: [1, 2, 5, 10, 20]
+output_dir: runs/glass_statmech
